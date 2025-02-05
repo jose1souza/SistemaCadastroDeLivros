@@ -19,10 +19,7 @@ namespace SistemaCadastro
 
         private void button2_Click(object sender, EventArgs e)
         {
-            Sistema sistema = new Sistema();
-            this.Hide();
-            sistema.ShowDialog();
-            this.Close();
+            Application.Exit();
         }
 
         private void txtUserLogin_TextChanged(object sender, EventArgs e)
@@ -32,15 +29,21 @@ namespace SistemaCadastro
 
         private void BtnConfirmaLogin_Click(object sender, EventArgs e)
         {
-            if (txtUserLogin.Text.Equals("adm") && txtSenhaLogin.Text.Equals("123"))
+            ConectaBanco conecta = new ConectaBanco();
+            if (conecta.verifica(txtUserLogin.Text, txtSenhaLogin.Text) == true)
             {
                 Sistema sistema = new Sistema();
                 this.Hide();
                 sistema.ShowDialog();
                 this.Close();
+
             }
             else
-                MessageBox.Show("Usúario ou senha incorreta");
+            {
+                MessageBox.Show("Usuário ou senha incorreta " + conecta.mensagem);
+                
+            }
+
         }
 
         private void label4_Click(object sender, EventArgs e)

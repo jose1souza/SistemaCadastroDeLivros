@@ -188,8 +188,7 @@ namespace SistemaCadastro
         private void button1_Click(object sender, EventArgs e)
         {
             int linha = dgLivros.CurrentRow.Index;
-            int id = Convert.ToInt32(
-                    dgLivros.Rows[linha].Cells["idlivros"].Value.ToString());
+            int id = Convert.ToInt32(dgLivros.Rows[linha].Cells[0].Value.ToString());
             DialogResult resp = MessageBox.Show("Tem certeza que deseja excluir?",
                 "Remove Livro", MessageBoxButtons.OKCancel);
             if (resp == DialogResult.OK)

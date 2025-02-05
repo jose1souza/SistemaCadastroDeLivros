@@ -101,6 +101,7 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Biblioteca.cs" />
     <Compile Include="ConectaBanco.cs" />
     <Compile Include="Livros.cs" />
     <Compile Include="Program.cs" />

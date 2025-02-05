@@ -30,6 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Sistema));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.button1 = new System.Windows.Forms.Button();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.btnBusca = new System.Windows.Forms.Button();
             this.btnCadastra = new System.Windows.Forms.Button();
@@ -41,6 +42,7 @@
             this.txtBusca = new System.Windows.Forms.TextBox();
             this.dgLivros = new System.Windows.Forms.DataGridView();
             this.tabRegistrar = new System.Windows.Forms.TabPage();
+            this.button4 = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.txtedicao = new System.Windows.Forms.TextBox();
             this.txteditora = new System.Windows.Forms.TextBox();
@@ -55,12 +57,10 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.tabControl1 = new System.Windows.Forms.TabControl();
-            this.button1 = new System.Windows.Forms.Button();
             this.tabAdicionar = new System.Windows.Forms.TabPage();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtnome = new System.Windows.Forms.RichTextBox();
             this.button3 = new System.Windows.Forms.Button();
-            this.button4 = new System.Windows.Forms.Button();
+            this.txtnome = new System.Windows.Forms.RichTextBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.tabBuscar.SuspendLayout();
@@ -85,14 +85,35 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // button1
+            // 
+            this.button1.BackColor = System.Drawing.Color.Transparent;
+            this.button1.FlatAppearance.BorderSize = 0;
+            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
+            this.button1.ForeColor = System.Drawing.Color.White;
+            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.Location = new System.Drawing.Point(24, 294);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(172, 64);
+            this.button1.TabIndex = 11;
+            this.button1.Text = "Adicionar Autor";
+            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click_1);
+            // 
             // pictureBox1
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.MediumBlue;
+            this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
             this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.InitialImage = ((System.Drawing.Image)(resources.GetObject("pictureBox1.InitialImage")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.InitialImage = null;
+            this.pictureBox1.Location = new System.Drawing.Point(12, 12);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(220, 220);
+            this.pictureBox1.Size = new System.Drawing.Size(190, 190);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.CenterImage;
             this.pictureBox1.TabIndex = 10;
             this.pictureBox1.TabStop = false;
             // 
@@ -151,10 +172,10 @@
             this.button2.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
             this.button2.ForeColor = System.Drawing.Color.Black;
             this.button2.Image = ((System.Drawing.Image)(resources.GetObject("button2.Image")));
-            this.button2.Location = new System.Drawing.Point(1042, 0);
+            this.button2.Location = new System.Drawing.Point(1020, 0);
             this.button2.Margin = new System.Windows.Forms.Padding(4);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(60, 60);
+            this.button2.Size = new System.Drawing.Size(80, 80);
             this.button2.TabIndex = 8;
             this.button2.TextAlign = System.Drawing.ContentAlignment.TopLeft;
             this.button2.TextImageRelation = System.Windows.Forms.TextImageRelation.TextBeforeImage;
@@ -221,7 +242,7 @@
             this.dgLivros.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgLivros.BackgroundColor = System.Drawing.Color.Lavender;
             this.dgLivros.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgLivros.Location = new System.Drawing.Point(65, 93);
+            this.dgLivros.Location = new System.Drawing.Point(16, 97);
             this.dgLivros.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.dgLivros.Name = "dgLivros";
             this.dgLivros.ReadOnly = true;
@@ -256,6 +277,21 @@
             this.tabRegistrar.Size = new System.Drawing.Size(832, 386);
             this.tabRegistrar.TabIndex = 0;
             this.tabRegistrar.Text = "Registrar Livro";
+            // 
+            // button4
+            // 
+            this.button4.BackColor = System.Drawing.Color.Lavender;
+            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button4.ForeColor = System.Drawing.Color.Black;
+            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
+            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.button4.Location = new System.Drawing.Point(566, 174);
+            this.button4.Name = "button4";
+            this.button4.Size = new System.Drawing.Size(203, 45);
+            this.button4.TabIndex = 20;
+            this.button4.Text = "     Registrar Novo";
+            this.button4.UseVisualStyleBackColor = false;
+            this.button4.Click += new System.EventHandler(this.button4_Click_1);
             // 
             // label12
             // 
@@ -424,31 +460,12 @@
             this.tabControl1.Controls.Add(this.tabAdicionar);
             this.tabControl1.Controls.Add(this.tabBuscar);
             this.tabControl1.Font = new System.Drawing.Font("Century Gothic", 9.75F);
-            this.tabControl1.Location = new System.Drawing.Point(238, 97);
+            this.tabControl1.Location = new System.Drawing.Point(247, 97);
             this.tabControl1.Margin = new System.Windows.Forms.Padding(4);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(840, 420);
             this.tabControl1.TabIndex = 9;
-            // 
-            // button1
-            // 
-            this.button1.BackColor = System.Drawing.Color.Transparent;
-            this.button1.FlatAppearance.BorderSize = 0;
-            this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button1.Font = new System.Drawing.Font("Century Gothic", 12F, System.Drawing.FontStyle.Bold);
-            this.button1.ForeColor = System.Drawing.Color.White;
-            this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.Location = new System.Drawing.Point(24, 294);
-            this.button1.Margin = new System.Windows.Forms.Padding(4);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(172, 64);
-            this.button1.TabIndex = 11;
-            this.button1.Text = "Adicionar Autor";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click_1);
             // 
             // tabAdicionar
             // 
@@ -462,27 +479,6 @@
             this.tabAdicionar.TabIndex = 2;
             this.tabAdicionar.Text = "Adicionar Autor";
             this.tabAdicionar.Click += new System.EventHandler(this.tabRegistrar2_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F);
-            this.label1.ForeColor = System.Drawing.Color.Black;
-            this.label1.Location = new System.Drawing.Point(86, 134);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(156, 23);
-            this.label1.TabIndex = 21;
-            this.label1.Text = "Novo Autor(a):";
-            // 
-            // txtnome
-            // 
-            this.txtnome.BackColor = System.Drawing.SystemColors.Info;
-            this.txtnome.Location = new System.Drawing.Point(275, 132);
-            this.txtnome.Name = "txtnome";
-            this.txtnome.Size = new System.Drawing.Size(270, 32);
-            this.txtnome.TabIndex = 23;
-            this.txtnome.Text = "";
             // 
             // button3
             // 
@@ -502,20 +498,26 @@
             this.button3.UseVisualStyleBackColor = true;
             this.button3.Click += new System.EventHandler(this.button3_Click);
             // 
-            // button4
+            // txtnome
             // 
-            this.button4.BackColor = System.Drawing.Color.Lavender;
-            this.button4.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button4.ForeColor = System.Drawing.Color.Black;
-            this.button4.Image = ((System.Drawing.Image)(resources.GetObject("button4.Image")));
-            this.button4.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button4.Location = new System.Drawing.Point(566, 174);
-            this.button4.Name = "button4";
-            this.button4.Size = new System.Drawing.Size(203, 45);
-            this.button4.TabIndex = 20;
-            this.button4.Text = "     Registrar Novo";
-            this.button4.UseVisualStyleBackColor = false;
-            this.button4.Click += new System.EventHandler(this.button4_Click_1);
+            this.txtnome.BackColor = System.Drawing.SystemColors.Info;
+            this.txtnome.Location = new System.Drawing.Point(275, 132);
+            this.txtnome.Name = "txtnome";
+            this.txtnome.Size = new System.Drawing.Size(270, 32);
+            this.txtnome.TabIndex = 23;
+            this.txtnome.Text = "";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Century Gothic", 12F);
+            this.label1.ForeColor = System.Drawing.Color.Black;
+            this.label1.Location = new System.Drawing.Point(86, 134);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(156, 23);
+            this.label1.TabIndex = 21;
+            this.label1.Text = "Novo Autor(a):";
             // 
             // Sistema
             // 

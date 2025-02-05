@@ -197,13 +197,13 @@
 </value>
   </data>
   <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>767, 0</value>
+    <value>743, -1</value>
   </data>
   <data name="button2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
     <value>4, 4, 4, 4</value>
   </data>
   <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>60, 60</value>
+    <value>80, 80</value>
   </data>
   <assembly alias="mscorlib" name="mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="button2.TabIndex" type="System.Int32, mscorlib">
@@ -293,7 +293,7 @@
   <data name="BtnConfirmaLogin.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAA
-        tgAAALYBlGnv8gAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKTSURBVFhHvZfZ
+        tAAAALQB65csewAAABl0RVh0U29mdHdhcmUAd3d3Lmlua3NjYXBlLm9yZ5vuPBoAAAKTSURBVFhHvZfZ
         q09RFMc/Mg8lRambzHlSrvGWiCJDeDEVpSTTu6QMiSi8keEJJfwBZEi8oCRJnkwZXrjJmHnWV2tr33XP
         +Tlnn5NP7Ydzvmutvdrj2pBGB2AI0ALMAKYBzUBPb1gnCr4cOA28An5ltB/ATWAHMMIHSKUHsBV46zr7
         BDwEbgD3gY8ZyRwDBvqAZZgEPImC3gM2AGOATt4YaAJWA2ctAfl8Nh9NWynWAF8tyCNgQckgo4BzUfIn
