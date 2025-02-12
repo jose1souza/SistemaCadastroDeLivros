@@ -38,12 +38,6 @@ namespace SistemaCadastro
             tabControl1.SelectedTab = tabControl1.TabPages[2];
         }
 
-
-
-
-
-
-
         private void Sistema_Load(object sender, EventArgs e)
         {
             listaAutor();

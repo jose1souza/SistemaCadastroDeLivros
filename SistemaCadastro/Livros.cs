@@ -19,12 +19,12 @@ namespace SistemaCadastro
         public int NumeroPaginas { get => numeroPaginas; set => numeroPaginas = value; }
         public int Autor { get => autor; set => autor = value; }
     }
-    public class Autor 
+    /* public class Autor 
     {
         public string nome;
         public string Nome
         {
             get => nome; set => nome = value;
         }
-    }
+    } */
 }
